@@ -1,3 +1,4 @@
 # local tooling only
 .claude/
 __pycache__/
+CLAUDE.md
