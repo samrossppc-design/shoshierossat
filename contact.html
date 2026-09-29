@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact &middot; Shoshie Ross Creative Arts Therapy</title>
-  <meta name="description" content="Get in touch about art therapy for a child or young person, or for your school.">
+  <title>Contact &middot; Shoshie Ross Art Therapy</title>
+  <meta name="description" content="Book an introductory call, an assessment or a review, or ask a question about art therapy for your child or school.">
   <meta name="robots" content="noindex"><!-- draft: remove at launch -->
   <link rel="canonical" href="https://shoshierossat.com/contact.html">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Shoshie Ross &middot; Creative Arts Therapy">
-  <meta property="og:title" content="Contact &middot; Shoshie Ross Creative Arts Therapy">
-  <meta property="og:description" content="Get in touch about art therapy for a child or young person, or for your school.">
+  <meta property="og:site_name" content="Shoshie Ross Art Therapy">
+  <meta property="og:title" content="Contact &middot; Shoshie Ross Art Therapy">
+  <meta property="og:description" content="Book an introductory call, an assessment or a review, or ask a question about art therapy for your child or school.">
   <meta property="og:url" content="https://shoshierossat.com/contact.html">
+  <meta property="og:image" content="https://shoshierossat.com/assets/img/shoshie.jpg">
   <meta name="theme-color" content="#faf7f2">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,7 @@
   <div class="container">
     <a class="brand" href="index.html">
       <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><linearGradient id="logo-h" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f0d363"/><stop offset="45%" stop-color="#eba484"/><stop offset="100%" stop-color="#6dadd2"/></linearGradient></defs><path d="M 28.3 5.9 C 24 4.8, 19 4.6, 15.3 5.1 C 12 5.6, 11 7.5, 10.8 9.2 C 10.2 11.5, 9.8 13.5, 9.7 15.4 C 9.6 17.5, 10.5 19, 12.3 20 C 13.5 20.7, 14.5 21.4, 15.8 22.2 C 17 23, 18 23.6, 19.3 23.4 C 22 23, 25 21, 27.3 19.2 C 28.5 21.5, 29.5 24.5, 30 27.5 C 29.5 29.5, 28.5 30.8, 27 31.4 C 25.5 32.2, 24 33, 22.1 33.2 C 19.5 33.5, 16.5 33, 14.2 32.2 C 12.5 31.5, 10.8 29.8, 9.5 27.6 C 11.5 29.5, 13.5 30.2, 15.6 30.2 C 18 30.2, 20.5 29.6, 21.9 28.8 C 23.2 28, 23.6 27, 23.8 26.4 C 24 25.6, 24 25, 23.5 24.5 C 22.5 23.8, 21.5 23.3, 20.7 22.8 C 20 22, 21.5 19, 21.9 16.2 C 20.8 15.6, 19.2 15.3, 18.2 15 C 17.5 14.7, 16.8 14.2, 16.1 13.8 C 16.2 13.3, 16.2 12.9, 16.3 12.6 C 16.8 12, 17.2 11.6, 17.6 11.4 C 18.2 11.2, 18.9 11.1, 19.5 11.1 C 21.5 11.2, 23.5 11.5, 25.7 12.1 C 28.3 11.8, 29.8 9.5, 28.3 5.9 Z" fill="url(#logo-h)"/><path d="M 26 36 C 20 37.5, 13.5 36, 10 31.5" fill="none" stroke="#a1c799" stroke-width="3" stroke-linecap="round" opacity="0.85"/></svg>
-      <span><span class="brand-name">Shoshie Ross</span><span class="brand-tag">Creative Arts Therapy</span></span>
+      <span><span class="brand-name">Shoshie Ross</span><span class="brand-tag">Art Therapy</span></span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bars" aria-hidden="true"></span>Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main">
@@ -46,7 +47,7 @@
 <section class="page-hero container">
   <p class="eyebrow">Contact</p>
   <h1>Get in touch</h1>
-  <p>Whether you're a parent, carer or school, you're welcome to get in touch. Tell me a little about what's going on and I'll reply within <span class="tbc">two working days</span>.</p>
+  <p>Whether you're a parent, carer or school, you're welcome to get in touch. You can book an introductory call, an assessment or a review, or just ask a question. I'll reply within two working days.</p>
 </section>
 
 <section class="section container" aria-label="Enquiry form">
@@ -87,22 +88,34 @@
           </div>
         </div>
 
-        <div class="field">
-          <label for="f-age">Age of the child or young person <span class="optional">(optional)</span></label>
-          <select id="f-age" name="child_age">
-            <option value="">Please choose</option>
-            <option>Under 5</option>
-            <option>5 to 7</option>
-            <option>8 to 11</option>
-            <option>12 to 15</option>
-            <option>16 to 18</option>
-            <option>Not applicable</option>
-          </select>
+        <div class="form-row two">
+          <div class="field">
+            <label for="f-want">What would you like to do?</label>
+            <select id="f-want" name="request" required>
+              <option value="">Please choose</option>
+              <option>Book a 15 minute introductory call</option>
+              <option>Book an assessment</option>
+              <option>Book a review</option>
+              <option>Ask a question</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-age">Age of the child or young person <span class="optional">(optional)</span></label>
+            <select id="f-age" name="child_age">
+              <option value="">Please choose</option>
+              <option>6 to 7</option>
+              <option>8 to 11</option>
+              <option>12 to 15</option>
+              <option>16 to 18</option>
+              <option>Not applicable</option>
+            </select>
+          </div>
         </div>
 
         <div class="field">
           <label for="f-message">How can I help?</label>
-          <p class="hint" id="f-message-hint">A few lines is plenty. Please don't include a child's full name or detailed personal information here. We can talk about that when we speak.</p>
+          <p class="hint" id="f-message-hint">A few lines is plenty. If you're booking, let me know which days and times suit you and I'll reply to arrange it. Please don't include a child's full name or detailed personal information here. We can talk about that when we speak.</p>
           <textarea id="f-message" name="message" aria-describedby="f-message-hint" required></textarea>
         </div>
 
@@ -118,7 +131,7 @@
 
       <div id="form-success" class="form-success" tabindex="-1" hidden>
         <h2>Thank you</h2>
-        <p>Your enquiry has been sent. I'll reply within <span class="tbc">two working days</span>.</p>
+        <p>Your enquiry has been sent. I'll reply within two working days.</p>
       </div>
     </div>
 
@@ -129,11 +142,11 @@
       </div>
       <div class="aside-block">
         <h2>Phone</h2>
-        <p><span class="tbc">[Phone number, or remove this]</span></p>
+        <p><a href="tel:+447541346789">07541 346789</a></p>
       </div>
       <div class="aside-block">
         <h2>Where I work</h2>
-        <p><span class="tbc">In schools across London</span></p>
+        <p>Schools across NW London &amp; Hertfordshire</p>
       </div>
       <p class="notice"><strong>This inbox isn't monitored for emergencies.</strong> If a child is in immediate danger, call 999. For urgent mental health support, call NHS 111. Children and young people can call Childline free on 0800 1111.</p>
     </aside>
@@ -143,7 +156,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-brand"><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><linearGradient id="logo-f" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f0d363"/><stop offset="45%" stop-color="#eba484"/><stop offset="100%" stop-color="#6dadd2"/></linearGradient></defs><path d="M 28.3 5.9 C 24 4.8, 19 4.6, 15.3 5.1 C 12 5.6, 11 7.5, 10.8 9.2 C 10.2 11.5, 9.8 13.5, 9.7 15.4 C 9.6 17.5, 10.5 19, 12.3 20 C 13.5 20.7, 14.5 21.4, 15.8 22.2 C 17 23, 18 23.6, 19.3 23.4 C 22 23, 25 21, 27.3 19.2 C 28.5 21.5, 29.5 24.5, 30 27.5 C 29.5 29.5, 28.5 30.8, 27 31.4 C 25.5 32.2, 24 33, 22.1 33.2 C 19.5 33.5, 16.5 33, 14.2 32.2 C 12.5 31.5, 10.8 29.8, 9.5 27.6 C 11.5 29.5, 13.5 30.2, 15.6 30.2 C 18 30.2, 20.5 29.6, 21.9 28.8 C 23.2 28, 23.6 27, 23.8 26.4 C 24 25.6, 24 25, 23.5 24.5 C 22.5 23.8, 21.5 23.3, 20.7 22.8 C 20 22, 21.5 19, 21.9 16.2 C 20.8 15.6, 19.2 15.3, 18.2 15 C 17.5 14.7, 16.8 14.2, 16.1 13.8 C 16.2 13.3, 16.2 12.9, 16.3 12.6 C 16.8 12, 17.2 11.6, 17.6 11.4 C 18.2 11.2, 18.9 11.1, 19.5 11.1 C 21.5 11.2, 23.5 11.5, 25.7 12.1 C 28.3 11.8, 29.8 9.5, 28.3 5.9 Z" fill="url(#logo-f)"/><path d="M 26 36 C 20 37.5, 13.5 36, 10 31.5" fill="none" stroke="#a1c799" stroke-width="3" stroke-linecap="round" opacity="0.85"/></svg>Shoshie Ross &middot; Creative Arts Therapy</div>
+    <div class="footer-brand"><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><defs><linearGradient id="logo-f" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f0d363"/><stop offset="45%" stop-color="#eba484"/><stop offset="100%" stop-color="#6dadd2"/></linearGradient></defs><path d="M 28.3 5.9 C 24 4.8, 19 4.6, 15.3 5.1 C 12 5.6, 11 7.5, 10.8 9.2 C 10.2 11.5, 9.8 13.5, 9.7 15.4 C 9.6 17.5, 10.5 19, 12.3 20 C 13.5 20.7, 14.5 21.4, 15.8 22.2 C 17 23, 18 23.6, 19.3 23.4 C 22 23, 25 21, 27.3 19.2 C 28.5 21.5, 29.5 24.5, 30 27.5 C 29.5 29.5, 28.5 30.8, 27 31.4 C 25.5 32.2, 24 33, 22.1 33.2 C 19.5 33.5, 16.5 33, 14.2 32.2 C 12.5 31.5, 10.8 29.8, 9.5 27.6 C 11.5 29.5, 13.5 30.2, 15.6 30.2 C 18 30.2, 20.5 29.6, 21.9 28.8 C 23.2 28, 23.6 27, 23.8 26.4 C 24 25.6, 24 25, 23.5 24.5 C 22.5 23.8, 21.5 23.3, 20.7 22.8 C 20 22, 21.5 19, 21.9 16.2 C 20.8 15.6, 19.2 15.3, 18.2 15 C 17.5 14.7, 16.8 14.2, 16.1 13.8 C 16.2 13.3, 16.2 12.9, 16.3 12.6 C 16.8 12, 17.2 11.6, 17.6 11.4 C 18.2 11.2, 18.9 11.1, 19.5 11.1 C 21.5 11.2, 23.5 11.5, 25.7 12.1 C 28.3 11.8, 29.8 9.5, 28.3 5.9 Z" fill="url(#logo-f)"/><path d="M 26 36 C 20 37.5, 13.5 36, 10 31.5" fill="none" stroke="#a1c799" stroke-width="3" stroke-linecap="round" opacity="0.85"/></svg>Shoshie Ross Art Therapy</div>
     <ul class="footer-links">
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
@@ -153,9 +166,9 @@
         <li><a href="privacy.html">Privacy</a></li>
     </ul>
     <div class="footer-meta">
-      <span>&copy; <span data-year>2026</span> Shoshie Ross</span>
-      <span><span class="tbc">London</span></span>
-      <span>HCPC registration number <span class="tbc">[number]</span></span>
+      <span>&copy; <span data-year>2026</span> Shoshie Ross Art Therapy</span>
+      <span>NW London &amp; Hertfordshire</span>
+      <span>HCPC registered: AS018574</span>
     </div>
   </div>
 </footer>
