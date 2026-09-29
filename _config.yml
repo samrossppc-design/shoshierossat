@@ -1,0 +1,4 @@
+# GitHub Pages builds with Jekyll. Keep working files off the live site.
+exclude:
+  - README.md
+  - scripts/

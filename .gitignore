@@ -1,0 +1,3 @@
+# local tooling only
+.claude/
+__pycache__/
