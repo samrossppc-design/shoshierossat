@@ -45,6 +45,8 @@ def main():
             issues.append("missing <title>")
         if 'name="description"' not in src:
             issues.append("missing meta description")
+        if "draft: remove at launch" in src:
+            issues.append("still hidden from search engines (remove the draft noindex line)")
         if items or issues:
             print(f"\n{page.name}")
             for item in items:
@@ -54,7 +56,7 @@ def main():
             problems += len(items) + len(issues)
 
     if not (ROOT / "CNAME").exists():
-        print("\nnote: no CNAME file yet (added at go-live, when the domain is connected)")
+        print("\nnote: no CNAME file, so the site is not attached to shoshierossat.com")
 
     if problems:
         print(f"\nNOT READY: {problems} item(s) left.")

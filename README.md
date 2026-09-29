@@ -59,6 +59,12 @@ private in it. Enquiries never touch the repo; they go straight to email.
 
 ## Going live (one time)
 
+The domain is attached before launch (the `CNAME` file) so Shoshie can
+see her real address while the content is finished. Until launch, every
+page carries a `noindex` line marked `draft: remove at launch`, so search
+engines don't list the draft. Removing those lines is the launch step;
+the go-live check flags them.
+
 1. **Repo.** On github.com, signed in as `samrossppc-design`, create an empty
    public repo called `shoshierossat` (no README). Then push this folder to
    it. Commits use the personal Gmail identity already set in this repo's
