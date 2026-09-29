@@ -1017,6 +1017,73 @@ p { margin: 0; text-wrap: pretty; }
   background: var(--butter);
 }
 
+/* ---------- about page ---------- */
+
+.navy-heads .section-head h2 { color: var(--navy); }
+.about-hero .chips { margin-top: 1.75rem; }
+
+/* My story: a coloured timeline */
+.timeline {
+  position: relative;
+  list-style: none;
+  margin: 3rem 0 0;
+  padding: 0;
+  max-width: 52rem;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.85rem;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  width: 3px;
+  border-radius: 3px;
+  background: linear-gradient(var(--sky), var(--peach), var(--sage));
+}
+.timeline > li { position: relative; padding-left: 3.25rem; }
+.timeline > li + li { margin-top: 1.5rem; }
+.timeline > li::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 1.9rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 999px;
+  background: var(--dot);
+  box-shadow: 0 0 0 5px var(--paper);
+}
+.timeline > li.sky { --dot: var(--sky); --tint: var(--sky-tint); --label: var(--sky-ink); }
+.timeline > li.peach { --dot: var(--peach); --tint: var(--peach-tint); --label: var(--peach-ink); }
+.timeline > li.sage { --dot: var(--sage); --tint: var(--sage-tint); --label: var(--sage-ink); }
+.timeline-card { background: var(--tint); border-radius: var(--radius-md); padding: 2rem 2.25rem; }
+.timeline-card .timeline-label {
+  font-family: var(--font-display);
+  font-size: var(--h3);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--label);
+}
+.timeline-card p + p { margin-top: var(--space-heading); color: var(--text-color); }
+
+@media (max-width: 639px) {
+  .timeline::before { left: 0.6rem; }
+  .timeline > li { padding-left: 2.4rem; }
+  .timeline > li::before { left: 0; width: 1.25rem; height: 1.25rem; }
+  .timeline-card { padding: 1.5rem 1.4rem; }
+  .help-card { padding: 2.25rem 1.6rem 1.75rem; }
+}
+
+/* How I work: four cards in two columns */
+@media (min-width: 800px) { .help-cards.two { grid-template-columns: repeat(2, 1fr); } }
+.help-card p { margin-top: var(--space-heading); color: var(--text-color); }
+.help-card.butter { background: var(--butter-tint); --tick: var(--butter-display); }
+.help-card.butter::before { background: var(--butter); }
+.help-card.butter h3 { color: var(--butter-ink); }
+
+/* Training: registration number box */
+.reg-number { font-size: clamp(2.25rem, 2vw + 1.5rem, 3rem); letter-spacing: 0.02em; }
+
 /* ---------- draft markers (remove before launch) ---------- */
 
 .tbc {

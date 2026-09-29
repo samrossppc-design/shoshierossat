@@ -18,8 +18,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..700;1,9..144,500&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/site.css?v=202609292248">
-  <script src="assets/js/site.js?v=202609292248" defer></script>
+  <link rel="stylesheet" href="assets/css/site.css?v=20260929225140">
+  <script src="assets/js/site.js?v=20260929225140" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -44,45 +44,105 @@
 </header>
 
 <main id="main">
-<section class="page-hero container about-hero">
+<section class="page-hero container about-hero has-wash">
+  <div class="wash butter" style="top:-3rem;left:35%;width:14rem;height:14rem"></div>
   <div class="split">
     <div class="split-body">
       <p class="eyebrow sky">About</p>
-      <h1>Hello, I'm Shoshie</h1>
+      <h1>Hello, I'm <span class="w w-sky">Shoshie</span></h1>
       <p>I'm a qualified Creative Arts Therapist working with children, adolescents and their families across NW London and Hertfordshire, in a warm, thoughtful and person-centred way.</p>
+      <ul class="chips">
+        <li class="sage">MA Art Therapy (Distinction)</li>
+        <li class="sky">HCPC registered</li>
+        <li class="peach">BAAT full member</li>
+      </ul>
     </div>
     <div class="photo">
-    <div class="wash peach" style="top:-2rem;right:-2rem;width:11rem;height:11rem"></div>
-    <div class="wash sky" style="bottom:-2rem;left:-2rem;width:10rem;height:10rem"></div>
-    <div class="photo-frame">
-      <img src="assets/img/shoshie.webp" alt="Shoshie Ross" width="900" height="1200">
-    </div>
+      <div class="wash peach" style="top:-2rem;right:-2rem;width:11rem;height:11rem"></div>
+      <div class="wash sky" style="bottom:-2rem;left:-2rem;width:10rem;height:10rem"></div>
+      <div class="photo-frame">
+        <img src="assets/img/shoshie.webp" alt="Shoshie Ross" width="900" height="1200">
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section container">
-  <div class="prose">
-    <h2>My story</h2>
-    <p>Growing up in a world of neurodiversity taught me so much from an early age: patience, kindness, understanding, and where to seek support. At 16, I began working at a local charity supporting neurodivergent individuals, running weekly clubs and activities that helped build confidence, connection and joy.</p>
-    <p>I went on to study Photography at the University of Westminster, graduating with a 2:1, and later worked at Gesher School, first as a teaching assistant and then as a teacher for neurodivergent children, for a total of six years. Teaching while studying for my Master's in Art Therapy at the University of Hertfordshire allowed me to deepen my skills in communication, empathy, understanding behaviour and making sense of different diagnoses.</p>
-    <p>Since receiving a distinction in my Master's, I have worked at Norwood as a Child and Adolescent Psychotherapist and Arts Therapist for Children, supporting many children, adolescents and their parents through a range of emotional, social and developmental challenges. These experiences continue to shape the warm, thoughtful and person-centred way I work with every child and family I meet.</p>
+<section class="section container navy-heads" aria-labelledby="story-title">
+  <div class="section-head">
+    <p class="eyebrow">My story</p>
+    <h2 id="story-title">How I came to art therapy</h2>
+  </div>
+  <ol class="timeline">
+    <li class="sky">
+      <div class="timeline-card">
+        <p class="timeline-label">Where it started</p>
+        <p>Growing up in a world of neurodiversity taught me so much from an early age: patience, kindness, understanding, and where to seek support. At 16, I began working at a local charity supporting neurodivergent individuals, running weekly clubs and activities that helped build confidence, connection and joy.</p>
+      </div>
+    </li>
+    <li class="peach">
+      <div class="timeline-card">
+        <p class="timeline-label">Study and teaching</p>
+        <p>I went on to study Photography at the University of Westminster, graduating with a 2:1, and later worked at Gesher School, first as a teaching assistant and then as a teacher for neurodivergent children, for a total of six years. Teaching while studying for my Master's in Art Therapy at the University of Hertfordshire allowed me to deepen my skills in communication, empathy, understanding behaviour and making sense of different diagnoses.</p>
+      </div>
+    </li>
+    <li class="sage">
+      <div class="timeline-card">
+        <p class="timeline-label">Art therapy</p>
+        <p>Since receiving a distinction in my Master's, I have worked at Norwood as a Child and Adolescent Psychotherapist and Arts Therapist for Children, supporting many children, adolescents and their parents through a range of emotional, social and developmental challenges. These experiences continue to shape the warm, thoughtful and person-centred way I work with every child and family I meet.</p>
+      </div>
+    </li>
+  </ol>
+</section>
 
-    <h2>How I work</h2>
-    <p>I work in a person-centred way. Each child leads: they choose what to make, what to play and what to talk about, and I'm there to notice, respond and keep the space safe.</p>
-    <p>Consistency matters. Sessions happen at the same time, in the same room, with the same materials each week, so that children know what to expect and can begin to trust the space.</p>
-    <p>Artwork is an important part of the process. Each child has their own folder, and their artwork stays safely with me until therapy ends.</p>
-    <p>I also work closely with parents and schools, with regular reviews of each child's progress. What happens in sessions stays confidential, so that children feel free to be themselves.</p>
+<section class="section container navy-heads" aria-labelledby="work-title">
+  <div class="section-head">
+    <p class="eyebrow sky">How I work</p>
+    <h2 id="work-title">What sessions with me are like</h2>
+  </div>
+  <div class="help-cards two">
+    <article class="help-card sky">
+      <h3>Person-centred</h3>
+      <p>I work in a person-centred way. Each child leads: they choose what to make, what to play and what to talk about, and I'm there to notice, respond and keep the space safe.</p>
+    </article>
+    <article class="help-card peach">
+      <h3>Consistency</h3>
+      <p>Consistency matters. Sessions happen at the same time, in the same room, with the same materials each week, so that children know what to expect and can begin to trust the space.</p>
+    </article>
+    <article class="help-card sage">
+      <h3>Artwork</h3>
+      <p>Artwork is an important part of the process. Each child has their own folder, and their artwork stays safely with me until therapy ends.</p>
+    </article>
+    <article class="help-card butter">
+      <h3>Families and schools</h3>
+      <p>I also work closely with parents and schools, with regular reviews of each child's progress. What happens in sessions stays confidential, so that children feel free to be themselves.</p>
+    </article>
+  </div>
+</section>
 
-    <h2>Training and registration</h2>
-    <ul>
-      <li>MA Art Therapy (Distinction), University of Hertfordshire</li>
-      <li>Registered with the Health and Care Professions Council (HCPC), registration number AS018574. You can <a href="https://www.hcpc-uk.org/check-the-register/" rel="noopener">check the HCPC register</a>.</li>
-      <li>Full member of the British Association of Art Therapists (BAAT)</li>
-      <li>Enhanced DBS check</li>
-      <li>Regular clinical supervision</li>
-      <li>Professional indemnity insurance</li>
-    </ul>
+<section class="section container" aria-labelledby="training-title">
+  <div class="panel">
+    <div class="wash butter" style="top:-2.5rem;right:-2.5rem;width:12rem;height:12rem"></div>
+    <div class="wash blush" style="bottom:-3rem;left:2.5rem;width:10rem;height:10rem"></div>
+    <div class="schools-grid">
+      <div>
+        <p class="eyebrow light">Qualifications</p>
+        <h2 id="training-title">Training and registration</h2>
+        <ul class="tick-list light">
+          <li>MA Art Therapy (Distinction), University of Hertfordshire</li>
+          <li>Registered with the Health and Care Professions Council (HCPC)</li>
+          <li>Full member of the British Association of Art Therapists (BAAT)</li>
+          <li>Enhanced DBS check</li>
+          <li>Regular clinical supervision</li>
+          <li>Professional indemnity insurance</li>
+        </ul>
+      </div>
+      <div class="price-card">
+        <p class="price-label">HCPC registration</p>
+        <p class="price reg-number">AS018574</p>
+        <p class="price-sub">Anyone can check my registration on the HCPC's public register.</p>
+        <a class="btn btn-primary" href="https://www.hcpc-uk.org/check-the-register/" rel="noopener">Check the HCPC register</a>
+      </div>
+    </div>
   </div>
 </section>
 
